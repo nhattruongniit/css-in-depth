@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Scroll Paper</title>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="blur"></div>
+
+    <div class="content">
+      <h2 class="title">Title</h2>
+
+      <div class="description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        tonu
+      </div>
+    </div>
+  </div>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container { 
+      position: fixed;
+      z-index: 1300;
+      inset: 0px;
+    }
+
+    .blur {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .content {
+      height: 100%;
+      max-height: calc(100% - 64px);
+      max-width: 600px;
+      margin: 32px auto;
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+    }
+
+    .title {
+      margin: 0px;
+      padding: 16px 24px;
+    }
+    
+    .description {
+      padding: 16px 24px;
+      font-size: 1rem;
+      line-height: 3.5;
+      overflow-y: auto;
+      height: calc(100% - 92px);
+    }
+
+  </style>
+
+</body>
+</html>
+
