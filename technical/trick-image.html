@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <title>Trick Image</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style type="text/css">
+        img {
+            min-height: 50px;
+        }
+
+        img:before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: -10px;
+            left: 0;
+            height: calc(100% + 10px);
+            width: 100%;
+            background-color: rgb(230, 230, 230);
+            border: 2px dotted rgb(200, 200, 200);
+            border-radius: 5px;
+        }
+
+        img:after {
+            content: "\f368" "Broken Image of" attr(alt);
+            display: block;
+            font-size: 16px;
+            font-style:  normal;
+            font-family: "Font Awesome 5 Brands";
+            color: rgb(100, 100, 100);
+            position: absolute;
+            top: 5px;
+            left:0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/1.a" title="This image is broken"/>
+</body>
+
+</html>

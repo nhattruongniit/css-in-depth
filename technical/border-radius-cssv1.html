@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <title>Border Radius CSS v1</title>
+
+    <style type="text/css">
+      a {
+        background: url(images/sprite-button.jpg) no-repeat;
+        background-position: 0 0;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+      }
+
+      a::after {
+        content: '';
+        background: url(images/sprite-button.jpg) no-repeat;
+        background-position: 0 -100px;
+        height: 100%;
+        width: 30px;
+        float:right;
+      }
+
+      a::before {
+        content: 'Border radius with CSS v1';
+        background: url(images/sprite-button.jpg) repeat;
+        background-position: 0 -50px;
+        display: inline-block;
+        height: 100%;
+        margin-left: 28px;
+      }
+    </style>
+</head>
+
+<body>
+  <h1> Border Radius with CSS v1</h1>
+    
+  <a href="javascript:;"></a>
+</body>
+
+</html>

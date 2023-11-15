@@ -1,0 +1,23 @@
+{
+  "name": "css-technical-dept",
+  "version": "1.0.0",
+  "description": "Trick dirty CSS: https://www.youtube.com/watch?v=DQk9TqO5ets",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhattruongniit/css-technical-dept.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhattruongniit/css-technical-dept/issues"
+  },
+  "homepage": "https://github.com/nhattruongniit/css-technical-dept#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}
